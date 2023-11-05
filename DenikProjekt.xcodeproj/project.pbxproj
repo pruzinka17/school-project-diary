@@ -7,19 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F73823BB2AF81DCD0059FC2D /* DenikProjektApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823BA2AF81DCD0059FC2D /* DenikProjektApp.swift */; };
-		F73823BD2AF81DCD0059FC2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823BC2AF81DCD0059FC2D /* ContentView.swift */; };
+		F73823BB2AF81DCD0059FC2D /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823BA2AF81DCD0059FC2D /* Main.swift */; };
 		F73823BF2AF81DCE0059FC2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73823BE2AF81DCE0059FC2D /* Assets.xcassets */; };
 		F73823C22AF81DCE0059FC2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73823C12AF81DCE0059FC2D /* Preview Assets.xcassets */; };
+		F73823CC2AF81E730059FC2D /* AppBootstrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823CB2AF81E730059FC2D /* AppBootstrapper.swift */; };
+		F73823D12AF81F450059FC2D /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823D02AF81F450059FC2D /* Presenter.swift */; };
+		F73823D32AF81F6C0059FC2D /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823D22AF81F6C0059FC2D /* Wireframe.swift */; };
+		F73823D62AF81F840059FC2D /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823D52AF81F840059FC2D /* MainWireframe.swift */; };
+		F73823D82AF81F8B0059FC2D /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823D72AF81F8B0059FC2D /* MainPresenter.swift */; };
+		F73823DA2AF81F9C0059FC2D /* DefaultMainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823D92AF81F9C0059FC2D /* DefaultMainWireframe.swift */; };
+		F73823DC2AF81FA50059FC2D /* DefaultMainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823DB2AF81FA50059FC2D /* DefaultMainPresenter.swift */; };
+		F73823DE2AF81FAC0059FC2D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823DD2AF81FAC0059FC2D /* MainView.swift */; };
+		F73823E02AF81FB40059FC2D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823DF2AF81FB40059FC2D /* MainViewModel.swift */; };
+		F73823E32AF820890059FC2D /* RecordsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823E22AF820890059FC2D /* RecordsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F73823B72AF81DCD0059FC2D /* DenikProjekt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DenikProjekt.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F73823BA2AF81DCD0059FC2D /* DenikProjektApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenikProjektApp.swift; sourceTree = "<group>"; };
-		F73823BC2AF81DCD0059FC2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F73823BA2AF81DCD0059FC2D /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		F73823BE2AF81DCE0059FC2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F73823C12AF81DCE0059FC2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F73823C32AF81DCE0059FC2D /* DenikProjekt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DenikProjekt.entitlements; sourceTree = "<group>"; };
+		F73823CB2AF81E730059FC2D /* AppBootstrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBootstrapper.swift; sourceTree = "<group>"; };
+		F73823D02AF81F450059FC2D /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		F73823D22AF81F6C0059FC2D /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		F73823D52AF81F840059FC2D /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
+		F73823D72AF81F8B0059FC2D /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		F73823D92AF81F9C0059FC2D /* DefaultMainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMainWireframe.swift; sourceTree = "<group>"; };
+		F73823DB2AF81FA50059FC2D /* DefaultMainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMainPresenter.swift; sourceTree = "<group>"; };
+		F73823DD2AF81FAC0059FC2D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F73823DF2AF81FB40059FC2D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		F73823E22AF820890059FC2D /* RecordsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +70,9 @@
 		F73823B92AF81DCD0059FC2D /* DenikProjekt */ = {
 			isa = PBXGroup;
 			children = (
-				F73823BA2AF81DCD0059FC2D /* DenikProjektApp.swift */,
-				F73823BC2AF81DCD0059FC2D /* ContentView.swift */,
+				F73823C92AF81E590059FC2D /* Main */,
+				F73823E12AF820740059FC2D /* Managers */,
+				F73823CD2AF81F200059FC2D /* Modules */,
 				F73823BE2AF81DCE0059FC2D /* Assets.xcassets */,
 				F73823C32AF81DCE0059FC2D /* DenikProjekt.entitlements */,
 				F73823C02AF81DCE0059FC2D /* Preview Content */,
@@ -67,6 +86,70 @@
 				F73823C12AF81DCE0059FC2D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F73823C92AF81E590059FC2D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F73823CA2AF81E610059FC2D /* Bootstrapper */,
+				F73823BA2AF81DCD0059FC2D /* Main.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F73823CA2AF81E610059FC2D /* Bootstrapper */ = {
+			isa = PBXGroup;
+			children = (
+				F73823CB2AF81E730059FC2D /* AppBootstrapper.swift */,
+			);
+			path = Bootstrapper;
+			sourceTree = "<group>";
+		};
+		F73823CD2AF81F200059FC2D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F73823CF2AF81F350059FC2D /* Configuration */,
+				F73823CE2AF81F2E0059FC2D /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F73823CE2AF81F2E0059FC2D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F73823D42AF81F770059FC2D /* Private */,
+				F73823D52AF81F840059FC2D /* MainWireframe.swift */,
+				F73823D72AF81F8B0059FC2D /* MainPresenter.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F73823CF2AF81F350059FC2D /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F73823D22AF81F6C0059FC2D /* Wireframe.swift */,
+				F73823D02AF81F450059FC2D /* Presenter.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		F73823D42AF81F770059FC2D /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				F73823D92AF81F9C0059FC2D /* DefaultMainWireframe.swift */,
+				F73823DB2AF81FA50059FC2D /* DefaultMainPresenter.swift */,
+				F73823DD2AF81FAC0059FC2D /* MainView.swift */,
+				F73823DF2AF81FB40059FC2D /* MainViewModel.swift */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		F73823E12AF820740059FC2D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F73823E22AF820890059FC2D /* RecordsManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +222,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F73823BD2AF81DCD0059FC2D /* ContentView.swift in Sources */,
-				F73823BB2AF81DCD0059FC2D /* DenikProjektApp.swift in Sources */,
+				F73823D62AF81F840059FC2D /* MainWireframe.swift in Sources */,
+				F73823DE2AF81FAC0059FC2D /* MainView.swift in Sources */,
+				F73823E32AF820890059FC2D /* RecordsManager.swift in Sources */,
+				F73823D82AF81F8B0059FC2D /* MainPresenter.swift in Sources */,
+				F73823D32AF81F6C0059FC2D /* Wireframe.swift in Sources */,
+				F73823D12AF81F450059FC2D /* Presenter.swift in Sources */,
+				F73823E02AF81FB40059FC2D /* MainViewModel.swift in Sources */,
+				F73823CC2AF81E730059FC2D /* AppBootstrapper.swift in Sources */,
+				F73823DA2AF81F9C0059FC2D /* DefaultMainWireframe.swift in Sources */,
+				F73823BB2AF81DCD0059FC2D /* Main.swift in Sources */,
+				F73823DC2AF81FA50059FC2D /* DefaultMainPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
