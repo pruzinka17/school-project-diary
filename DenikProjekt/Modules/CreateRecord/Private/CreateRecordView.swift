@@ -44,19 +44,21 @@ private extension CreateRecordView {
     
     @ViewBuilder func makeContent() -> some View {
         
-        VStack {
+        VStack(spacing: 30) {
             
-            TextField("title", text: $presenter.viewModel.title)
+            TextField("title", text: $presenter.viewModel.title, axis: .vertical)
+                .lineLimit(1)
             
-            TextField("text", text: $presenter.viewModel.text)
+            TextField("text", text: $presenter.viewModel.text, axis: .vertical)
+                .lineLimit(3...)
+            
+            Spacer()
             
             Button("Create Record") {
                 
                 presenter.handle(event: .didTapCreate)
             }
-            
-            Spacer()
         }
-        .padding(16)
+        .padding(32)
     }
 }

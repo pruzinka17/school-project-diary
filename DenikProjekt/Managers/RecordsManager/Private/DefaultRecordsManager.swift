@@ -47,16 +47,7 @@ extension DefaultRecordsManager: RecordsManager {
         
         recordsListPublisher.send(recordsList)
         
-        let recordsArray = parserService.toArray(recordsList)
-        
-        do {
-            
-            let data = try endcoder.encode(recordsArray)
-            userDefaults.set(data, forKey: Defaults.recordsKey)
-        } catch {
-            
-            print(error)
-        }
+        saveRecords()
     }
     
     func deleteRecord(_ node: Node<Record>) {
@@ -66,8 +57,7 @@ extension DefaultRecordsManager: RecordsManager {
         
         recordsListPublisher.send(recordsList)
         
-        let recordsArray = parserService.toArray(recordsList)
-        userDefaults.set(recordsArray, forKey: Defaults.recordsKey)
+        saveRecords()
     }
 }
 
@@ -89,6 +79,27 @@ private extension DefaultRecordsManager {
                 
                 print(error)
             }
+        }
+    }
+}
+
+// MARK: - Helpers
+
+private extension DefaultRecordsManager {
+    
+    func saveRecords() {
+        
+        let recordList = recordsListPublisher.value
+        
+        let recordsArray = parserService.toArray(recordList)
+        
+        do {
+            
+            let data = try endcoder.encode(recordsArray)
+            userDefaults.set(data, forKey: Defaults.recordsKey)
+        } catch {
+            
+            print(error)
         }
     }
 }

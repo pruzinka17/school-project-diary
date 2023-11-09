@@ -65,7 +65,7 @@ private extension MainView {
     
     @ViewBuilder func makeCotent() -> some View {
         
-        VStack {
+        VStack(alignment: .leading, spacing: 30) {
             
             switch presenter.viewModel.state {
             case .empty:
@@ -73,36 +73,54 @@ private extension MainView {
                 Text("There are no records")
             case let .record(record):
                 
-                Text(record.title)
-                Text(record.text)
-                Text(record.date.description)
-                
                 HStack {
                     
-                    Spacer()
-                    
-                    if record.showPrevious {
-                        
-                        Button("Previous") {
-                            
-                            presenter.handle(event: .didTapPrevious)
-                        }
-                    }
-                    
-//                    Button("Delete") {
-//
-//                        presenter.handle(event: .didTapDelete)
-//                    }
-                    
-                    if record.showNext {
-                        
-                        Button("Next") {
-                            
-                            presenter.handle(event: .didTapNext)
-                        }
-                    }
+                    Text(record.title)
+                        .font(.system(size: 24, weight: .bold, design: .rounded))
                     
                     Spacer()
+                    
+                    Text(record.date.description)
+                        .font(.system(size: 16))
+                }
+                
+                Text(record.text)
+                    .font(.system(size: 18))
+                
+                Spacer()
+                
+                ZStack(alignment: .center) {
+                    
+                    HStack {
+                        
+                        if record.showPrevious {
+                            
+                            Button("Previous") {
+                                
+                                presenter.handle(event: .didTapPrevious)
+                            }
+                        }
+                        
+                        Spacer()
+                    }
+                    
+                    Button("Delete") {
+
+                        presenter.handle(event: .didTapDelete)
+                    }
+                    
+                    HStack {
+                        
+                        Spacer()
+                        
+                        if record.showNext {
+                            
+                            Button("Next") {
+                                
+                                presenter.handle(event: .didTapNext)
+                            }
+                        }
+                    }
                 }
             }
         }

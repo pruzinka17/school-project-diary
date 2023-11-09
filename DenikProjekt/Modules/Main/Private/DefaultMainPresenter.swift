@@ -73,7 +73,32 @@ final class DefaultMainPresenter: MainPresenter {
             updateView()
         case .didTapDelete:
             
-            print("did delete topic")
+            guard let current = currentRecord else {
+                
+                return
+            }
+            
+            recordsManager.deleteRecord(current)
+            
+            let nextNode = current.next
+            let previousNode = current.previous
+            
+            if let previous = previousNode {
+                
+                currentRecord = previous
+                updateView()
+                return
+            }
+            
+            if let next = nextNode {
+                
+                currentRecord = next
+                updateView()
+                return
+            }
+            
+            currentRecord = nil
+            updateView()
         }
     }
 }

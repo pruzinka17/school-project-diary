@@ -66,5 +66,21 @@ final class LinkedList<Value> {
         
         previous?.next = next
         next?.previous = previous
+        
+        if previous == nil {
+            
+            head = next
+        }
+        
+        if next == nil {
+            
+            tail = previous
+        }
+        
+        if next == nil, previous == nil {
+            
+            head = nil
+            tail = nil
+        }
     }
 }
