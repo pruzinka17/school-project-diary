@@ -25,10 +25,19 @@ final class AppBootstrapper {
             return mainWireframe
         }
         
-        let recordsManager = RecordsManager()
+        let parserService = RecordsToLinkedListParserService()
+        
+        let recordsManager = DefaultRecordsManager(
+            parserService: parserService
+        )
+        
+        let createRecordWireframe = DefaultCreateRecordWireframe(
+            recordsManager: recordsManager
+        )
         
         let wireframe = DefaultMainWireframe(
-            recordsManager: recordsManager
+            recordsManager: recordsManager,
+            createRecordWireframe: createRecordWireframe
         )
         
         self.mainWireframe = wireframe

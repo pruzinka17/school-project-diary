@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7269F4E2AF974A500DEC94C /* DefaultCreateRecordWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7269F4D2AF974A500DEC94C /* DefaultCreateRecordWireframe.swift */; };
+		F7269F502AF974B100DEC94C /* DefaultCreateRecordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7269F4F2AF974B100DEC94C /* DefaultCreateRecordPresenter.swift */; };
+		F7269F542AF974C500DEC94C /* CreateRecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7269F532AF974C500DEC94C /* CreateRecordViewModel.swift */; };
+		F7269F562AF974D100DEC94C /* CreateRecordWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7269F552AF974D100DEC94C /* CreateRecordWireframe.swift */; };
+		F7269F582AF974D900DEC94C /* CreateRecordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7269F572AF974D900DEC94C /* CreateRecordPresenter.swift */; };
+		F7269F5A2AF974E700DEC94C /* CreateRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7269F592AF974E700DEC94C /* CreateRecordView.swift */; };
+		F7269F5E2AFA22B700DEC94C /* RecordsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7269F5D2AFA22B700DEC94C /* RecordsManager.swift */; };
 		F73823BB2AF81DCD0059FC2D /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823BA2AF81DCD0059FC2D /* Main.swift */; };
 		F73823BF2AF81DCE0059FC2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73823BE2AF81DCE0059FC2D /* Assets.xcassets */; };
 		F73823C22AF81DCE0059FC2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73823C12AF81DCE0059FC2D /* Preview Assets.xcassets */; };
@@ -19,10 +26,21 @@
 		F73823DC2AF81FA50059FC2D /* DefaultMainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823DB2AF81FA50059FC2D /* DefaultMainPresenter.swift */; };
 		F73823DE2AF81FAC0059FC2D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823DD2AF81FAC0059FC2D /* MainView.swift */; };
 		F73823E02AF81FB40059FC2D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823DF2AF81FB40059FC2D /* MainViewModel.swift */; };
-		F73823E32AF820890059FC2D /* RecordsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823E22AF820890059FC2D /* RecordsManager.swift */; };
+		F73823E32AF820890059FC2D /* DefaultRecordsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73823E22AF820890059FC2D /* DefaultRecordsManager.swift */; };
+		F7D115252AF8DDB10038E823 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D115242AF8DDB10038E823 /* LinkedList.swift */; };
+		F7D115272AF8DDDE0038E823 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D115262AF8DDDE0038E823 /* Node.swift */; };
+		F7D1152A2AF8EB120038E823 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D115292AF8EB120038E823 /* Record.swift */; };
+		F7D1152F2AF8F2800038E823 /* RecordsToLinkedListParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D1152E2AF8F2800038E823 /* RecordsToLinkedListParserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F7269F4D2AF974A500DEC94C /* DefaultCreateRecordWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCreateRecordWireframe.swift; sourceTree = "<group>"; };
+		F7269F4F2AF974B100DEC94C /* DefaultCreateRecordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCreateRecordPresenter.swift; sourceTree = "<group>"; };
+		F7269F532AF974C500DEC94C /* CreateRecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecordViewModel.swift; sourceTree = "<group>"; };
+		F7269F552AF974D100DEC94C /* CreateRecordWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecordWireframe.swift; sourceTree = "<group>"; };
+		F7269F572AF974D900DEC94C /* CreateRecordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecordPresenter.swift; sourceTree = "<group>"; };
+		F7269F592AF974E700DEC94C /* CreateRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecordView.swift; sourceTree = "<group>"; };
+		F7269F5D2AFA22B700DEC94C /* RecordsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsManager.swift; sourceTree = "<group>"; };
 		F73823B72AF81DCD0059FC2D /* DenikProjekt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DenikProjekt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73823BA2AF81DCD0059FC2D /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		F73823BE2AF81DCE0059FC2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,7 +55,11 @@
 		F73823DB2AF81FA50059FC2D /* DefaultMainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMainPresenter.swift; sourceTree = "<group>"; };
 		F73823DD2AF81FAC0059FC2D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F73823DF2AF81FB40059FC2D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		F73823E22AF820890059FC2D /* RecordsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsManager.swift; sourceTree = "<group>"; };
+		F73823E22AF820890059FC2D /* DefaultRecordsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRecordsManager.swift; sourceTree = "<group>"; };
+		F7D115242AF8DDB10038E823 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		F7D115262AF8DDDE0038E823 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		F7D115292AF8EB120038E823 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		F7D1152E2AF8F2800038E823 /* RecordsToLinkedListParserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsToLinkedListParserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +73,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7269F4B2AF9748900DEC94C /* CreateRecord */ = {
+			isa = PBXGroup;
+			children = (
+				F7269F4C2AF9749900DEC94C /* Private */,
+				F7269F552AF974D100DEC94C /* CreateRecordWireframe.swift */,
+				F7269F572AF974D900DEC94C /* CreateRecordPresenter.swift */,
+			);
+			path = CreateRecord;
+			sourceTree = "<group>";
+		};
+		F7269F4C2AF9749900DEC94C /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				F7269F4D2AF974A500DEC94C /* DefaultCreateRecordWireframe.swift */,
+				F7269F4F2AF974B100DEC94C /* DefaultCreateRecordPresenter.swift */,
+				F7269F592AF974E700DEC94C /* CreateRecordView.swift */,
+				F7269F532AF974C500DEC94C /* CreateRecordViewModel.swift */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		F7269F5B2AFA22A300DEC94C /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				F73823E22AF820890059FC2D /* DefaultRecordsManager.swift */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		F7269F5C2AFA22AB00DEC94C /* RecordsManager */ = {
+			isa = PBXGroup;
+			children = (
+				F7269F5B2AFA22A300DEC94C /* Private */,
+				F7269F5D2AFA22B700DEC94C /* RecordsManager.swift */,
+			);
+			path = RecordsManager;
+			sourceTree = "<group>";
+		};
 		F73823AE2AF81DCD0059FC2D = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +132,8 @@
 			children = (
 				F73823C92AF81E590059FC2D /* Main */,
 				F73823E12AF820740059FC2D /* Managers */,
+				F7D115282AF8EB010038E823 /* Models */,
+				F7D1151F2AF8DD0F0038E823 /* Utils */,
 				F73823CD2AF81F200059FC2D /* Modules */,
 				F73823BE2AF81DCE0059FC2D /* Assets.xcassets */,
 				F73823C32AF81DCE0059FC2D /* DenikProjekt.entitlements */,
@@ -110,6 +172,7 @@
 			children = (
 				F73823CF2AF81F350059FC2D /* Configuration */,
 				F73823CE2AF81F2E0059FC2D /* Main */,
+				F7269F4B2AF9748900DEC94C /* CreateRecord */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -147,9 +210,35 @@
 		F73823E12AF820740059FC2D /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				F73823E22AF820890059FC2D /* RecordsManager.swift */,
+				F7269F5C2AFA22AB00DEC94C /* RecordsManager */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		F7D1151F2AF8DD0F0038E823 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F7D115232AF8DDA70038E823 /* LinkedList */,
+				F7D1152E2AF8F2800038E823 /* RecordsToLinkedListParserService.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F7D115232AF8DDA70038E823 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				F7D115242AF8DDB10038E823 /* LinkedList.swift */,
+				F7D115262AF8DDDE0038E823 /* Node.swift */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
+		F7D115282AF8EB010038E823 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7D115292AF8EB120038E823 /* Record.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,11 +313,22 @@
 			files = (
 				F73823D62AF81F840059FC2D /* MainWireframe.swift in Sources */,
 				F73823DE2AF81FAC0059FC2D /* MainView.swift in Sources */,
-				F73823E32AF820890059FC2D /* RecordsManager.swift in Sources */,
+				F7269F5E2AFA22B700DEC94C /* RecordsManager.swift in Sources */,
+				F7D1152F2AF8F2800038E823 /* RecordsToLinkedListParserService.swift in Sources */,
+				F7269F562AF974D100DEC94C /* CreateRecordWireframe.swift in Sources */,
+				F7269F4E2AF974A500DEC94C /* DefaultCreateRecordWireframe.swift in Sources */,
+				F73823E32AF820890059FC2D /* DefaultRecordsManager.swift in Sources */,
 				F73823D82AF81F8B0059FC2D /* MainPresenter.swift in Sources */,
+				F7D1152A2AF8EB120038E823 /* Record.swift in Sources */,
 				F73823D32AF81F6C0059FC2D /* Wireframe.swift in Sources */,
+				F7D115272AF8DDDE0038E823 /* Node.swift in Sources */,
 				F73823D12AF81F450059FC2D /* Presenter.swift in Sources */,
+				F7269F542AF974C500DEC94C /* CreateRecordViewModel.swift in Sources */,
+				F7D115252AF8DDB10038E823 /* LinkedList.swift in Sources */,
 				F73823E02AF81FB40059FC2D /* MainViewModel.swift in Sources */,
+				F7269F582AF974D900DEC94C /* CreateRecordPresenter.swift in Sources */,
+				F7269F5A2AF974E700DEC94C /* CreateRecordView.swift in Sources */,
+				F7269F502AF974B100DEC94C /* DefaultCreateRecordPresenter.swift in Sources */,
 				F73823CC2AF81E730059FC2D /* AppBootstrapper.swift in Sources */,
 				F73823DA2AF81F9C0059FC2D /* DefaultMainWireframe.swift in Sources */,
 				F73823BB2AF81DCD0059FC2D /* Main.swift in Sources */,

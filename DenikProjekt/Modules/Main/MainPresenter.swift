@@ -9,6 +9,9 @@ import Foundation
 
 enum MainViewEvents {
     
+    case didTapNext
+    case didTapPrevious
+    case didTapDelete
 }
 
 typealias MainPresenter = Presenter<MainViewModel, MainViewEvents>

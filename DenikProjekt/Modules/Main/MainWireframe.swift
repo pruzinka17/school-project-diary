@@ -7,6 +7,11 @@
 
 import Foundation
 
+enum MainWireframeNavigation {
+    
+    case createRecord
+}
+
 protocol MainWireframe: Wireframe {
     
 }

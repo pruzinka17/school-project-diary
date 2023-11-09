@@ -12,11 +12,16 @@ final class DefaultMainWireframe {
     
     private let recordsManager: RecordsManager
     
+    private let createRecordWireframe: CreateRecordWireframe
+    
     init(
-        recordsManager: RecordsManager
+        recordsManager: RecordsManager,
+        createRecordWireframe: CreateRecordWireframe
     ) {
         
         self.recordsManager = recordsManager
+        
+        self.createRecordWireframe = createRecordWireframe
     }
 }
 
@@ -45,6 +50,26 @@ private extension DefaultMainWireframe {
             presenter: presenter
         )
         
-        return AnyView(view)
+        return AnyView(
+            NavigationStack(
+                root: {
+                    
+                    view
+                        .navigationDestination(
+                            for: MainWireframeNavigation.self,
+                            destination: { destination in
+                                
+                                switch destination {
+                                case .createRecord:
+                                    
+                                    AnyView(
+                                        self.createRecordWireframe.prepare()
+                                    )
+                                }
+                            }
+                        )
+                }
+            )
+        )
     }
 }
